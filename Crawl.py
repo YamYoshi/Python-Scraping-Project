@@ -19,5 +19,5 @@ async def main():
 async def get_links(resp):
     sel = Selector(resp.text)
     urls = sel.xpath('//a[contains(@href, "tag")]/@href').getall()
-    yield urls
+    print(urls)
 asyncio.run(main())
