@@ -49,7 +49,7 @@ def main():
     #print(read_val)
     print(tagged_max)
 
-ddef remove_punctuation(text):
+def remove_punctuation(text):
     punct = dict.fromkeys(i for i in range(sys.maxunicode)
                           if unicodedata.category(chr(i)).startswith('P'))
     text_no_p = [string.translate(punct) for string in text]
